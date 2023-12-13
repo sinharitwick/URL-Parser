@@ -29,7 +29,11 @@ function parseURL() {
 
     for (const [key, value] of Object.entries(parsedURL)) {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `<strong>${key}:</strong> ${value}`;
+        if (key === 'query_params') {
+            listItem.innerHTML = `<strong>${key}:</strong> ${JSON.stringify(value)}`;
+        } else {
+            listItem.innerHTML = `<strong>${key}:</strong> ${value}`;
+        }
         resultList.appendChild(listItem);
     }
 
