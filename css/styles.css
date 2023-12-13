@@ -1,0 +1,36 @@
+/* css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#urlInput {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#parseBtn {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#resContainer {
+    display: none;
+    margin-top: 20px;
+}
+
+#resContainer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#resContainer li {
+    margin-bottom: 5px;
+}
